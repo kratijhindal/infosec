@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<script src="../lib/angular.js"></script>
+		<script src="../lib/sanitize.js"></script> <!-- to display html files properly from external files-->
+		<script src="../module/module.js"></script>
+		<script src="../controller/controller.js"></script>
+	</head>
+	<body>
+		<div ng-app="myModule">
+			<div ng-controller="myCtrl">
+				<button ng-click="aboutus()">About us</button>
+				<button ng-click="contactus()">Contact us</button>
+				<p ng-bind-html="finalmsg"></p>
+				
+			</div>
+		</div>
+	</body>
+</html>

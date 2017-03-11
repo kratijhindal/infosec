@@ -1,0 +1,23 @@
+<html>
+ <head>
+  <script src="js/angular.js"></script>
+ </head>
+
+<body>
+ <div ng-app="myModule">
+ <div ng-controller="myTest">
+ <p>Full Name: {{name}} </p><!--view area-->
+ <p>Mobile No. : {{mobile}}</p>
+</div><!--controller end-->
+  
+</div><!--module end-->
+
+<script>
+ var obj=angular.module("myModule",[]);
+ obj.controller("myTest",function($scope){
+  $scope.name="Mr Abc";
+  $scope.mobile=999999;
+});
+</script>
+</body>
+</html>

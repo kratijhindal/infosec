@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<script src="../lib/angular.js"></script>
+		<script src="../lib/route.js"></script>
+	</head>
+	<body>
+		<div ng-app="myModule">
+			<hr color='red'>
+				<a href="#/">Home</a>
+				<a href="#aboutus">about us</a>
+				<a href="#contact">contact</a>
+				<a href="#services">service</a>
+				<a href="#login">login</a>
+			<hr color='green'>
+			<!--<div ng-view> </div>
+			<div class="ng-view"> </div>-->
+			<ng-view> </ng-view>
+		</div>
+		<!-- model object strts-->
+		<script>
+			var obj = angular.module("myModule", ["ngRoute"]);
+			obj.config(function($routeProvider){
+			$routeProvider
+			
+			.when("/", {
+			templateUrl:"usserlist.html"
+			})
+			.when("/aboutus", {
+			templateUrl:"aboutus.html"
+			})
+
+			.when("/contact", {
+			templateUrl:"contact.html"
+			})
+			
+			.when("/login", {
+			templateUrl:"login.html"
+			})
+			.when("/services", {
+			templateUrl:"services.html"
+			})
+			});
+
+</script>
+	</body>
+</html>
+
+<!-- everything starts with ng is build in directive, we can use user defined directive as well-->

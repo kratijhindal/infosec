@@ -1,0 +1,7 @@
+json test
+oops..in js files, first need to define class.
+constructor() is a global variable.
+in place of function(), write "get"
+refer www.developer.mozila.org
+Reset button to make work, needed to be written inside <form>
+how to inherrit n extend the class:

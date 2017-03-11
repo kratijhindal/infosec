@@ -1,0 +1,28 @@
+<html>
+ <head>
+  <script src="js/angular.js"></script>
+ </head>
+
+<body>
+ <div ng-app="" ng-init="user=[{'name':'ABCD','mobile':'1111111','city':'banglore'},
+                               {'name':'bbbb','mobile':'2222222','city':'kolcutta'},
+                               {'name':'aaa','mobile':'3433444','city':'hyderabad'}, 
+                               {'name':'sss','mobile':'9877898','city':'delhi'}]">
+  <table align="center">
+  <tr>
+  <th>Full name</th>
+
+<th>Mobile</th>
+<th>City</th>
+ </tr>
+  
+<tr ng-repeat="row in user | orderBy:'-name'">
+ <td>{{row.name | uppercase}}</td>
+<td>{{row.mobile}}</td>
+<td>{{row.city}}</td>
+</tr>
+
+ 
+</div>
+</body>
+</html>

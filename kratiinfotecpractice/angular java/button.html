@@ -1,0 +1,30 @@
+<html>
+ <head>
+  <script src="js/angular.js"></script>
+ </head>
+
+ <body>
+   <div ng-app="mymodule">
+    <div ng-controller="mycontroller">
+     <button ng-click="signup()">new user</button>
+     <button ng-click="check()">check it</button>
+     <p>{{message}}</p>
+     <script>//voea d mna odc nfs sdne sdme
+      var obj=angular.module("mymodule",[]);
+      obj.controller("mycontroller",function($scope){
+
+       $scope.signup=function(){
+       	$scope.message="signing up ";
+       }
+
+       $scope.check=function(){
+       	 $scope.message="checking it";
+       }
+      });
+     </script>
+
+    	
+    </div>
+   </div>
+ </body>
+</html>

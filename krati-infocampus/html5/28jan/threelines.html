@@ -1,0 +1,53 @@
+
+<!DOCTYPE HTML>
+ <html>
+  <body><!--text in canvas angular and php7 -->
+  
+   <canvas id="mycanvas" width="700" height="800">
+	</canvas>
+	
+	<script>//browser interpreter only understands sccii text file.
+	 var c=document.getElementById('mycanvas');
+	 var ctx = c.getContext('2d');//getcontext is a method which returns an object which have method and properties for drawing the canvas.(obj can call property  and function)
+	 ctx.moveTo(100,100);<!--1 line-->
+	 ctx.lineTo(500,100);
+	 
+	 
+	 
+	 ctx.font = '30px Arial';
+	 
+	 ctx.textBaseLine = 'bottom';
+	 ctx.fillText('1',100,100);
+	 
+	 ctx.textBaseLine = 'top';
+	 ctx.fillText('0',100,100);
+	 
+	 
+	 
+	 
+	 //i,vi starts
+	 ctx.textBaseLine = 'bottom';
+	 ctx.fillText('i',500,100);
+	 
+	 ctx.textBaseLine = 'top';
+	 ctx.fillText('VI',500,100);
+	 
+	 
+	 //i,vi end
+	 ctx.textBaseLine = 'middle';
+	 ctx.fillText('a',300,100);
+	 //--------
+	 
+	 //ctx.moveTo(100,300);<!--3 line-->
+	 //ctx.lineTo(500,300);
+	 
+	 
+	 
+	 ctx.stroke();
+	 
+	</script>
+	
+  </body>
+ </html><!--
+ 
+ it is a property of contnt which aligns t etext at different orientations top,bottom,middle,-->

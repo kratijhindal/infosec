@@ -1,0 +1,51 @@
+body{background-color:grey;}
+#maincontainer{
+ width:80%;
+ min-height:600px;
+ background-color:white;
+ margin:auto;
+}
+#topmenu{
+  
+ min-height:100px;
+ background-color:black;
+ padding-top:25px;
+
+
+
+}
+#topmenu li{
+      display:inline;
+      
+      padding-left: 150px;
+      
+      
+      font-weight: bold;
+      font-size: 23px;
+
+}
+#topmenu li a{
+       color:white;
+       text-align:center;
+      
+      font-weight: bold;
+      font-size: 23px;
+      text-decoration: none;
+
+}
+
+
+
+#datablock{
+	height:500px;
+	background-color: blue;
+}
+ h1,p{
+
+  text-align:center;
+  
+
+}
+.dropdown{
+   display:inline;
+}

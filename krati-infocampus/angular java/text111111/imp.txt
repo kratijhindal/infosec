@@ -1,0 +1,57 @@
+Angular js…
+ng-app— for angular js application
+ng-init—for initialise variables
+ng-model—“full name” <input> <select> <textarea>
+ng-bind— <p ng-bind=“fullname"></p>
+ng-repeat
+ <option ng-repeat=“a in item” value=“{{a}}”>
+{{a}} </option>
+ or
+<option ng-repeat=“a in item” ng-bind=“a"></option> 
+ng-click
+{{expression or calculation}} taking from ng-model.
+
+-------------app—>module—>controllers------------------------------------------------------------Amc
+
+...<div ng-app="myModule"> 
+<div ng-controller="myFilter" ng-init="item=['mango','orange','apple','rice','banana']”>……
+
+<script>
+ var module = angular.module( “first “,[]);
+</script>
+<tr ng-repeat="row in alluser | orderBy:'name'”> 
+<tr ng-repeat="row in alluser | filter:'bangalore’">
+
+<script>
+var obj=angular.module("myGroup",[]);
+obj.controller("groupControl",function($scope){});
+</script>
+============================================================
+voamna
+odcnfsb
+…………====================
+<script>
+ var obj = angular.module("myModule",[]);
+     obj.controller("myEvent", function($scope, $http){
+
+      $scope.signup = function(){
+      $scope.message="hello signup";
+           }
+     $scope.login = function(){
+      $scope.message="hello login";
+        }    
+     $scope.aboutus = function(){
+      $scope.message="hello about us";
+       }    
+     $scope.contactus = function(){
+      $scope.message="hello contact us";
+    }
+    $scope.userlist = function(){
+      $http.get("userdata.txt").then(function(response){
+       $scope.user = response.data;
+      });
+    }
+  });
+</script>
+
+array———single code comma laga ker par mei colon..sccc

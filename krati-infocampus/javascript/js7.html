@@ -1,0 +1,55 @@
+<html>
+ <head>
+  <title> js7</title>
+	 <script>
+		 function test(){
+		   alert("hello test");
+			 
+		 }
+	function test2(val){
+	 alert(val);
+	}
+		 function test3(){
+			 prompt("thanks for your visit,please enter your Mobile to help your better");
+		 
+		 
+		 }
+	function test4(){
+		alert("ok");
+		return false;
+	
+	}	 
+	 
+	 </script>
+	
+ </head>
+ <body onload="test3()">
+	 <h1>Keyboard events</h1>
+	 On ket press: 
+	 <input type="text" onkeypress="test()">
+	 <hr color="green">
+   On ket down: 
+	 <input type="text" onkeydown="test()">
+	 <hr color="green">
+	 On ket press: 
+	 <input type="text" onkeyup="test2(this.value)">
+	 <hr color="green"> 
+	 On focus: 
+	 <input type="text" onfocus="test()">
+	 <hr color="green">
+	 On ket blur: 
+	 <input type="text" onblur="test2(this.value)">
+	 <hr color="green">
+	 <h3>onload event;</h3>
+	  <!--<body onload="test()">-->
+	 <hr color="red">
+	   <h3>on submit event example</h3>
+	    <form method="post" action="saveuser.php" onsubmit="return test4()">
+			Full name:<input type="text" id="fname"><br><br>
+			mobile:<input type="text" id="mobile"><br><br>
+			 <button type="submit">Reset</button>
+			<button type="submit">Save</button>
+		</form>	
+ 
+ </body>
+</html>

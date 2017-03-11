@@ -1,0 +1,23 @@
+<html>
+ <head>
+	 <link rel="stylesheet" href="lightbox.css">
+	 <script>
+		 function closebox(){
+		             document.getElementById("shadow").style.display="none";
+			         document.getElementById("lightbox").style.display="none";
+		 }
+		 function openlightbox(){
+		              document.getElementById("shadow").style.display="block";
+			          document.getElementById("lightbox").style.display="block";
+		 }
+	 </script>
+ </head>
+ 
+ <body>
+  <a href="#" onclick="openlightbox()">Login</a>
+	 <div id="shadow" class="hideblock"></div>
+	 <div id="lightbox" class="hideblock">
+	  <a href="#" onclick="closebox()" id="close">X</a>
+	 </div>
+ </body>
+</html>

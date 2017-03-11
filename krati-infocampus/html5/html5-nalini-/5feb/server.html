@@ -1,0 +1,34 @@
+<!--server sent event: it is a substitute for azax.it is a web technnnnology in which we refresh particular content of web page. without refreshing web page.for axaz everytime we need to request to server .for ssc it is not required. simply we ceate the server request on the broswer.and it autimatically update if it new on the server.Method:
+ =>onopen:when connection to server is opened
+ .=>onerror:when eeeor occurs.
+=>onmessage:when message is recived
+Allow-Control-Allow-Origin need to install-->
+<html>
+ <body>
+  The current time is<span id="cit"></span>
+ <script>
+ console.log(typeof(Event))
+  if(typeof(Event) !== 'undefined'){
+  console.log('event server is supported');
+   var ev;
+	ev = new EventSource('http://www.sooryprojects.com');
+	ev.onmessage = function(event){
+	document.getElementById('cit').innerHTML 
+=event.data;
+	}
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+  else
+  {
+   console.log('event server is not supported');
+  }
+ </script>
+ </body>
+</html>

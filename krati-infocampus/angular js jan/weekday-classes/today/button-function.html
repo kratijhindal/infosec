@@ -1,0 +1,55 @@
+<html>
+ <head>
+  <script src="js/angular.js"></script>
+ </head>
+
+<body>
+ <div ng-app="myModule">
+ <div ng-controller="myEvent">
+  <button ng-click="signup()">New User</button>
+	<button ng-click="login()">login</button>
+	<button ng-click="aboutus()">About us</button>
+	<button ng-click="contactus()">Contact Us</button>
+        <button ng-click="userlist()">All User</button>
+
+         <hr color="red">
+         <div>{{message}}</div>
+         <table align="center">
+            <tr>
+             <th>full name</th>
+              <th>mobile no.</th>
+            </tr>
+            <tr ng-repeat="row in user">
+             <th>{{row.name}}</th>
+              <th>mobile no.</th>
+            </tr>
+         </table>
+</div><!--controller end-->
+  
+</div><!--module end-->
+
+<script>
+ var obj = angular.module("myModule",[]);
+     obj.controller("myEvent", function($scope, $http){
+
+      $scope.signup = function(){
+      $scope.message="hello signup";
+           }
+     $scope.login = function(){
+      $scope.message="hello login";
+        }    
+     $scope.aboutus = function(){
+      $scope.message="hello about us";
+       }    
+     $scope.contactus = function(){
+      $scope.message="hello contact us";
+    }
+    $scope.userlist = function(){
+      $http.get("userdata.txt").then(function(response){
+       $scope.user = response.data;
+      });
+    }
+  });
+</script>
+</body>
+</html>

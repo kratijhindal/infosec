@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<script src="../lib/angular.js"></script>
+		<script src="../lib/jquery-3.1.1.min.js"></script>
+	</head>
+	<body>
+		<div ng-app="formValidates">
+			<div ng-controller="myCtrl">
+				<form name="form1">
+					<table align="center">
+						<caption><h3>Sign Up</h3></caption>
+						<tr>
+							<th>Full Name</th>
+							<td>
+								<input type="text" name="fname" ng-model="user.fname" required>
+								<span style="color:red" ng-show="form1.fname.$dirty && form1.fname.$invalid">
+								<span ng-show="form1.fname.$error.required">Invalid Name.</span>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<th>Email</th>
+							<td>
+								<input type="email" name="email" ng-model="user.email" required>
+								<span style="color:red" ng-show="form1.email.$dirty && form1.email.$invalid">
+								<span ng-show="form1.email.$error.required">Invalid email.</span>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<th>Mobile</th>
+							<td>
+								<input type="num" name="mobile" ng-model="user.mobile" required>
+								<span style="color:red" ng-show="form1.mobile.$dirty && form1.mobile.$invalid">
+								<span ng-show="form1.mobile.$error.required">Invalid mobile.</span>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<th>City</th>
+							<td>
+								<select  name="city" ng-model="user.city" required>
+								<option value="">choose city</option>
+								<option value="bangalore">bangalore</option>
+								<span style="color:red" ng-show="form1.city.$dirty && form1.city.$invalid">
+								<span ng-show="form1.city.$error.required">Invalid city.</span>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<th>Message</th>
+							<td>
+								<textarea  name="msg" rows="3" cols="20" ng-model="user.msg" required></textarea>
+								<span style="color:red" ng-show="form1.msg.$dirty && form1.msg.$invalid">
+								<span ng-show="form1.msg.$error.required">Invalid message.</span>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<th colspan="2">
+							<input type="checkbox" name="chk" ng-model="chk.msg" required>conditions
+								<span style="color:red" ng-show="form1.chk.$dirty && form1.chk.$invalid">
+								<span ng-show="form1.chk.$error.required">Invalid condition.</span>
+								</span>
+							</th>
+						</tr>
+						<tr>
+							<th colspan="2"><button type="submit">register</th>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+		<script>
+			var obj = angular.module("formValidates",[]);
+			obj.controller("myCtrl", function($scope){
+			$scope.user={};
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<script src="js/angular.js"></script>
+	</head>
+	<body>
+		<div ng-app="" ng-init="item=['mango','apple','orange','banana']">
+			<p>
+				{{item[1]}}
+			</p>
+			<h2>NG REPEAT</h2>
+			<ul>
+				<li ng-repeat="x in item">{{x}}</li>
+			</ul>
+			<hr>
+			<h2>NG REPEAT DROP DOWN</h2>
+			select item:<select> <!-- ng-model can be used in the place of name or id--> 
+							<option value="">choose item</option>
+							<option ng-repeat="a in item" value="{{a}}">{{a}}</option>
+						</select>
+			<hr>
+			select item:<select>
+							<option value="">choose item</option>
+							<option ng-repeat="a in item" ng-bind="a"></option> <!-- ng-bind is giving value and text for item-->
+						</select>
+			
+			
+		</div>
+	</body>
+</html>

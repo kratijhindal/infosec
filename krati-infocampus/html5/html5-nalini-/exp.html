@@ -1,0 +1,29 @@
+<!-- write a script to make a 2d and drag the objects in between them-->
+<!DOCTYPE HTML>
+<html>
+	<body>
+		<div ondrop="onDrop(event)" ondragover="dragOver(event)" id="id1" style="width:400px;height:300px;border:2px solid green;">
+		<br><br>
+		<img id="id3"draggable="true" ondragstart="dragStart(event)" src="2.jpg" width=100 height=100>
+		</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<div id="id2" ondrop="onDrop(event)" ondragover="dragOver(event)" style="width:200px;height:200px;border:2px solid green"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<div id="id4" ondrop="onDrop(event)" ondragover="dragOver(event)" style="width:200px;height:200px;border:2px solid green">
+		<img id="id5"draggable="true" ondragstart="dragStart(event)" src="1.jpg" width=100 height=100>
+		</div>
+		<script>
+		function dragStart(event)
+			{
+				event.dataTransfer.setData('snakeId',event.target.id);
+			}
+			function onDrop(event)
+			{
+				var snakeObject=event.dataTransfer.getData('snakeId');
+				event.target.appendChild(document.getElementById(snakeObject));
+			}
+			function dragOver(event)
+			{
+				event.preventDefault();
+			}
+		</script>
+		</body>
+</html>

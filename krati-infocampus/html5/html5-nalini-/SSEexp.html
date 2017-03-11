@@ -1,0 +1,34 @@
+<!--SSE server sent event sse is substitute for ajax.
+AJAX- ajax is a web technology in which we referesh perticular web content without refreshing a web page.
+for Ajax call every time we need to requset to the server 
+for sse its not required simply we create the server refernce onthe browser andf it automatically updtae if ther is new update on the server.
+methods of SSE 
+	=>onopen:when connection to server open
+	=>onerror:when error occurs
+	=>onmessage:when message recives
+	
+	install Allow-Control-Allow-Origin in the browser-->
+<!--write ascript to display a cricket player inth eform of table craete a database  which attributes player_name, player_age,player_salary,playesr_numberofone Day
+
+bawer we can install any frontend software with itbawer is installed by NPM manager
+install node open cmd cd myfolder npm install bower
+next bower install bootstrap-->
+	
+<!DOCTYPE HTML>
+<html>
+<body>
+the current time is<span id="cit"></span>
+</body>
+<script>
+console.log(typeof(Event))
+if(typeof(Event)!=='undefined')
+{
+	console.log('Event server is supported');
+	
+	var ev;
+	ev=new EventSource("http://www.sooryprojects.com");
+	ev.onmessage=function(event){
+	document.getElementById('cit').Inner}
+}
+</script>
+</html>

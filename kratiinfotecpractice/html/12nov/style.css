@@ -1,0 +1,75 @@
+body{
+  background-color:yellow;
+}
+#main-container{
+	  width:90%;
+		min-height:650px;
+		margin:auto;
+		background-color:lightblue;
+		
+}
+#menubar{
+	min-height:100px;
+	background-color:green;
+	
+}
+#menubar ul{
+	list-style-type:none;
+	padding:25px;
+	margin-left:40px;
+	
+}
+#menubar ul li{
+	display:inline;
+	color:black;
+	width:70px;
+	padding:10px;
+	
+}
+#menubar ul li a{
+	text-decoration:none;
+	color:black;
+	font-size:21px;
+	font-style: bold;
+}
+#menubar ul li a:hover{
+	
+	color:blue;
+	
+}
+.table1{
+	margin:auto;
+	padding:50px;
+  background:1px pink;	
+  width:70%;
+  min-height:400px;
+}
+.box{
+   border-radius: 20px;
+   width:80%;
+   line-height: 26px;
+}
+.sbutton{
+   
+   background: grey;
+   font-size: 20px;
+   border-radius: 10px;
+
+}
+
+
+}
+.simpletable{
+	border: 1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+

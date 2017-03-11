@@ -1,0 +1,31 @@
+<html>
+<head><title>
+	java string
+     </title>
+</head>
+<body>
+hello
+ <p id="p1"> "pls locate me".</p>
+ <button type ="button" onclick="myfunction()">try it</button>
+
+	<p id="demo"></p>
+	<script>
+	function myfunction(){
+	   var str = document.getElementById("p1").innerHTML;
+
+	   var pos = str.lastIndexOf("locate");
+	   //alert(pos);
+    
+	   
+	   document.getElementById("demo").innerHTML= pos;
+}
+		
+
+
+
+
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<html>
+ <head>
+  <script src="js/angular.js"></script>
+ </head>
+
+ <body>
+  <div ng-app="" ng-init="items=['dog','cat','lion',]">
+  	Select a topic:
+  	<select>
+  	<option value="">choose item</option>
+      <option ng-repeat="val in items" value="val">{{val}}</option>
+  		
+  	</select><br>
+  	select a topic:<select>
+  	<option value="">choose item</option>
+      <option ng-repeat="val in items" ng-bind="val"></option>
+  		
+  	</select>
+
+  	<select>
+  		<optgroup label="state">
+  			<option value="1">up</option>
+  			<option value="2">mp</option>
+  			<option value="3">hp</option>
+  		</optgroup>
+  		<optgroup label="city">
+  			<option value="11">banglore</option>
+  			<option value="12">agra</option>
+  			<option value="13">kanpur</option>
+  		</optgroup>
+  		<optgroup label="country">
+  			<option value="111">india</option>
+  			<option value="122">amsterdem</option>
+  			<option value="133">neiterland</option>
+  		</optgroup>
+  	</select>
+  </div><!--module end-->
+ </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+ <html>
+  <body>
+  
+   <canvas id="mycanvas" width="700" height="800">
+	</canvas>
+	
+	<script>
+	
+	 var c=document.getElementById('mycanvas');
+	 var ctx=c.getContext('2d');
+	  //ctx.strokeRect(100,100,200,200);
+	  ctx.moveTo(100,100);<!--1 line-->
+	 ctx.lineTo(400,100);
+	 ctx.lineTo(400,400);<!--1 line-->
+	 ctx.lineTo(100,400);
+	 
+	
+	 ctx.lineTo(100,100);
+	 
+	 
+
+	ctx.fillStyle = 'black';
+	 ctx.shadowBlur= 20;
+	 ctx.shadowWidth= 100;
+	 //ctx.shadowColor= 'red';
+	  ctx.shadowOffsetX= 50;
+	   ctx.shadowOffsetY= 10;
+		ctx.shadowColor= 'red';
+	 ctx.fillRect(200,300,100,100);
+	 ctx.stroke();
+	</script>
+	
+  </body>
+ </html>
+ 

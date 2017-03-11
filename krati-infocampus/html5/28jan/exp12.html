@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+ <html>
+  <body>
+  
+   <canvas id="mycanvas" width="700" height="800">
+	</canvas>
+	
+	<script>//browser interpreter only understands sccii text file.
+	 var c=document.getElementById('mycanvas');
+	 var ctx=c.getContext('2d');//getcontext is a method which returns an object which have method and properties for drawing the canvas.(obj can call property  and function)
+	 var grd = ctx.createLinearGradient(100,100,200,200);
+	 grd.addColorStop(0,'red')
+	  grd.addColorStop(0.5,'green')
+	   grd.addColorStop(1,'blue');
+	  ctx.strokeStyle = grd;
+	 ctx.strokeRect(100,100,200,200);
+	 
+	 
+	 ctx.stroke();
+	</script>
+	
+  </body>
+ </html><!--
+ ctx.createLine

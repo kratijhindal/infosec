@@ -1,0 +1,56 @@
+<html>
+ <head>
+  <script src="external.js"></script>
+ </head>
+
+ <body>
+ <center id="cmsg"></center>
+  <table align="center" cellspacing="4"> 
+  <caption><h3>	Contact us </h3></caption>
+   <tr>
+   	<th>Full Name:</th>
+   	<td>
+   		<input type="text" id="fname"><br>
+   		<i id="ferror"></i>
+   	</td>
+   </tr>
+
+   <tr>
+   	<th>Mobile</th>
+   	<td>
+   		<input type="text" id="mobile" maxlength="10"><br>
+   		<i id="merror"></i>
+   	</td>
+   </tr>
+
+   <tr>
+   	<th>State</th>
+   	<td>
+   		<select id="state">
+   			<option value="">choose state</option>
+   			<option value="1">up</option>
+   			<option value="2">mp</option>
+   			<option value="3">hp</option>
+   		</select><br>
+   		<i id="serror"></i>
+   	</td>
+   </tr>
+
+   <tr>
+   	<th>Address</th>
+   	<td>
+   		<textarea rows="10" cols="25" id="address">
+   		</textarea><br>
+   		<i id="aerror"></i>
+   	</td>
+   </tr>
+
+   <tr>
+   <th colspan="4">
+   	<button onclick="validate()">SAVE</button>
+   	</th>
+   </tr>
+
+  </table>
+ </body>
+</html>

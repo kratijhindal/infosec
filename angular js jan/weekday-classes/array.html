@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<script src="js/angular.js"></script>
+	</head>
+	<body>
+		<div ng-app="" ng-init="
+		user=[{'name':'deepthi','mobile':'999999999','address':'bangalore'},
+		{'name':'deepak','mobile':'999999999','address':'pune'},
+		{'name':'anu','mobile':'888888888','address':'chennai'},
+		{'name':'venkat','mobile':'77777777','address':'delhi'},
+		{'name':'mahesh','mobile':'6666666666','address':'mumbai'}]">
+		
+		<table align="center" border="1">
+			<caption><h2>User List</h2></caption>
+			<thead>
+				<tr>
+					<th>Full Name</th>
+					<th>Mobile</th>
+					<th>Address</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="row in user">
+					<td>{{row.name}}</td>
+					<td>{{row.mobile}}</td>
+					<td>{{row.address}}</td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+	</body>
+</html>

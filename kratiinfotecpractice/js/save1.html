@@ -1,0 +1,60 @@
+<html>
+ 
+ <head>
+   <script src="save.js">
+
+   </script>
+ </head>
+
+ <body>
+ <center>
+ <h2>Javascript oops</h2><hr>
+  <button onclick = "obj.signup">sign up</button>
+  <button onclick = "obj.view">view details</button>
+  <button onclick = "obj.edit">Edit details</button>
+<hr>
+ <form >
+ <table id="signupblock" align="center" style="background:red;width:30%;margin:auto;display:none;" cellpadding="10">
+    <caption><h2 id="heading"> Sign Up </h2> 
+  <h3 id="done"></h3>
+  </caption>
+ 	<tr>
+ 		<th>Full Name</th>
+ 		<td><input type="text" id="fname"></td>
+ 	</tr>
+ 	<tr>
+ 		<th>email</th>
+ 		<td><input type="text" id="email"></td>
+ 	</tr>
+ 	<tr>
+ 		<th>address</th>
+ 		<td><textarea rows="8" cols="25"></textarea></td>
+ 	</tr>
+ 	<tr>
+ 	 <th colspan="2">
+ 	 <button type="button" id="btn1" onclick="obj.savedata">Save</button>
+ 	 <button type="reset" id="btn2">Reset</button>
+ 	 </th>
+ 	</tr>
+ </table>
+  
+ <table id="viewblock" align="center" style="background:yellow;width:30%;margin:auto;display:none;" cellpadding="10">
+ <caption><h2>my information</h2></caption>
+  <tr>
+  	<th>Full name</th>
+  	<td><label id="dfname"></label></td>
+  </tr>
+  <tr>
+  	<th>email</th>
+  	<td><label id="demail"></label></td>
+  </tr>
+  <tr>
+  	<th>address</th>
+  	<td><label id="daddress"></label></td>
+  </tr>
+ </table>
+
+ </form>
+ </center>
+ </body>
+</html>

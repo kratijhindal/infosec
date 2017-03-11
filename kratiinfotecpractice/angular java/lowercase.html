@@ -1,0 +1,25 @@
+<html>
+<head>
+	<script src="js/angular.js"></script>
+</head>
+<body>
+	<div ng-app="myapp">
+	 <div ng-controller="mycontroller">
+	 	<p>{{mess}}</p>
+	 	<p>{{message}}</p>
+	 	<p>{{m}}</p>
+	 </div><!--controler ends -->
+	</div><!--app ends-->
+
+	<script>//voea d mna odc nfs sdne sdme
+		var obj=angular.module("myapp",[]);
+		obj.controller("mycontroller",function($scope){
+			$scope.mess="john";
+			$scope.message=angular.uppercase($scope.mess);
+			$scope.m=angular.isString($scope.message);
+		});
+
+		
+	</script>
+</body>
+</html>

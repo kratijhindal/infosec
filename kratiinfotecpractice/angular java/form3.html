@@ -1,0 +1,31 @@
+<html>
+ <head>
+ 	<script src="js/angular.js"></script>
+ </head>
+
+ <body>
+ <div ng-app="">
+  <div>
+  	<input type="radio" value="dog" ng-model="val">Dogs
+  	<input type="radio" value="tut" ng-model="val">tutorials
+  	<input type="radio" value="cats" ng-model="val">Cats
+
+  	<div ng-switch="val">
+  	 <div ng-switch-when="dog">
+  	 	<h3> DOGS</h3>
+  	 </div>
+  		<div ng-switch-when="tut">
+  	 	<h3> tutorials</h3>
+  	 </div>
+  		
+  		<div ng-switch-when="cats">
+  	 	<h3> CATS</h3>
+  	 </div>
+  		
+  	</div>
+
+  </div><!--controller ends--> 	
+ </div><!--module ends-->
+ 
+ </body>
+</html>

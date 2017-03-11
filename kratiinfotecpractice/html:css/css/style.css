@@ -1,0 +1,123 @@
+body{
+	
+}
+#mainblock{
+	width:80%;
+	min-height:600px;
+	
+	margin:auto;
+}
+#topblock{
+	
+	height:80px;
+	background-color:yellow;
+	
+}
+#toplist{
+
+}
+.listitems{
+	display: inline;
+	
+
+}
+#leftblock{
+	float:left;
+	width:20%;
+	height:520px;
+	background-color:green;
+	
+
+}
+#datablock{
+	float:left;
+	width:80%;
+	height:520px;
+	background-color:orange;
+
+}
+#toplist{
+ text-align:center;
+ padding-top: 10px;
+
+}
+.topitem{
+	display:inline;
+
+	text-decoration: none;
+ padding:10px;
+ font-weight: bold;
+ font-size: 22px;
+ 
+
+	
+
+}
+.topitem a:hover{
+	color:red;
+}
+#leftlist{
+ text-align:center;
+ padding-top: 30px;
+ text-decoration: none;
+
+}
+.listitem{
+	
+
+list-style-type: none;
+ padding:10px;
+ font-weight: bold;
+ font-size: 22px;
+ border-bottom: 2px solid red;
+ line-height: 25px;
+   
+
+
+}
+.listitem a:hover{color:red;}	
+caption{
+	font-size: 23px;
+}
+#signup{
+	width:400px;
+   text-align: center;
+   border: 4px solid red;
+   margin-left: 200px;
+
+
+
+}
+.inputbox{
+	padding:5px;
+	border-radius: 5px;
+    line-height: 30px;
+    border:4px green;
+    height:28px;
+
+
+
+}
+
+button{
+	background-color:green;
+	font-weight: bold;
+	font-size: 20px;
+	padding:3px;
+	 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

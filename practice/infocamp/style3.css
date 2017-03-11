@@ -1,0 +1,46 @@
+body{
+	background-color:yellow;
+	width:100%;
+}
+
+}
+#one{
+	height:50px;
+	background-color:black;
+	margin:none;
+	width:100%;
+	border:none;
+}
+#navbar-one li{
+     padding:-10px;
+}
+#navbar-one li a{
+      color:white;
+}
+#navbar-one li a:hover{
+	background-color: red;
+}
+.fa fa-facebook i{
+	color:white;
+}
+
+#mobile{
+	color:white;
+	font-size:18px;
+	
+}
+table tr {
+	color:white;
+}
+#navbar-two a:hover{
+	background-color: red;
+}
+#navbar-two a{
+	color :black;
+}
+.label label-danger{
+	width:100px;
+}
+#navbar-two li{
+	padding-top:10px;
+}

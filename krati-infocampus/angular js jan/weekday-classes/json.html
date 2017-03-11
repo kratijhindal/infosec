@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<script src="js/angular.js"></script>
+	</head>
+	<body>
+		<div ng-app="myGroup"> 
+			<div ng-controller="groupControl" ng-init="
+			alluser=[{'name':'alex','email':'alex@gmail','city':'bangalore','mobile':'99999999'},
+			{'name':'bindu','email':'bindu@gmail','city':'pune','mobile':'88888888'},
+			{'name':'chintu','email':'chintu@gmail','city':'mumbai','mobile':'7777777'},
+			{'name':'ellei','email':'ellei@gmail','city':'kolkata','mobile':'66666666'},
+			{'name':'govind','email':'govind@gmail','city':'chennai','mobile':'7777777'},
+			{'name':'harsha','email':'harsha@gmail','city':'bangalore','mobile':'88888888'},
+			{'name':'jack','email':'jack@gmail','city':'pune','mobile':'5555555'},
+			{'name':'kiran','email':'kiran@gmail','city':'pune','mobile':'88888888'},
+			{'name':'lohith','email':'lohith@gmail','city':'bangalore','mobile':'444444444'},]">
+				<table align="center" bgcolor="skyblue">
+				<caption>orderby ascending</caption>
+					<tr>
+						<th>Full Name</th>
+						<th>Email Id</th>
+						<th>City</th>
+						<th>Mobile No</th>
+					</tr>
+					<tr ng-repeat="row in alluser | orderBy:'-name'"> <!-- name:aesc , -name:desc -->
+						<td>{{row.name | uppercase}}<td>
+						<td>{{row.email}}</td>
+						<td>{{row.city}}</td>
+						<td>{{row.mobile}}</td>
+					</tr>
+				</table>
+				<table align="center" bgcolor="skyblue">
+				<caption>orderby descending</caption>
+					<tr>
+						<th>Full Name</th>
+						<th>Email Id</th>
+						<th>City</th>
+						<th>Mobile No</th>
+					</tr>
+					<tr ng-repeat="row in alluser | orderBy:'name'"> <!-- name:aesc , -name:desc -->
+						<td>{{row.name | uppercase}}<td>
+						<td>{{row.email}}</td>
+						<td>{{row.city}}</td>
+						<td>{{row.mobile}}</td>
+					</tr>
+				</table>
+				<br>
+				<hr>
+				<table align="center" bgcolor="skyblue">
+				<caption>filter is same as group by</caption>
+					<tr>
+						<th>Full Name</th>
+						<th>Email Id</th>
+						<th>City</th>
+						<th>Mobile No</th>
+					</tr>
+					<tr ng-repeat="row in alluser | filter:'bangalore'">
+						<td>{{row.name}}<td>
+						<td>{{row.email}}</td>
+						<td>{{row.city}}</td>
+						<td>{{row.mobile}}</td>
+					</tr>
+				</table>
+				<!-- filter for string-->
+				<hr>
+				<table align="center" bgcolor="skyblue">
+				<caption>filter for alphabet</caption>
+					<tr>
+						<th>Full Name</th>
+						<th>Email Id</th>
+						<th>City</th>
+						<th>Mobile No</th>
+					</tr>
+					<tr ng-repeat="row in alluser | filter:'n'">
+						<td>{{row.name}}<td>
+						<td>{{row.email}}</td>
+						<td>{{row.city}}</td>
+						<td>{{row.mobile | currency:'&#8360'}}</td> <!-- 8377 for symbol-->
+					</tr>
+				</table>
+			</div>
+		</div>
+		<script>
+			var obj=angular.module("myGroup",[]);
+			obj.controller("groupControl",function($scope){});
+		</script>
+	</body>
+</html>

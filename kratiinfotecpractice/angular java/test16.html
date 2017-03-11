@@ -1,0 +1,35 @@
+<html>
+<head>
+ <script src="js/angular.js">
+ </script>
+</head>
+
+<body>
+ <div ng-app="myModule">
+ 	<div ng-controller="myController">
+ 		<button ng-click="signup()">sign up</button>
+ 		<button ng-click="test1()">clickme</button>
+ 		<button ng-click="reset()">reset</button>
+ 		<hr>
+ 		<div>{{message}}</div>
+ 	</div>
+ </div>
+
+ <script>
+  var obj = angular.module("myModule",[]);
+  obj.controller("myController",function($scope){
+  	
+  	$scope.signup = function(){
+  		$scope.message="sign up";
+  	}
+
+  	$scope.test1 = function(){
+  		$scope.message = "this is a test case";
+  	}
+  	$scope.reset = function(){
+  		$scope.message = "reset button";
+  	}
+  });
+ </script>
+</body>
+</html>

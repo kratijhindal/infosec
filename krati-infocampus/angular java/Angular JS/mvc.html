@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<script src="js/angular.js"></script>
+	</head>
+	<body>
+		<div ng-app="myModule">
+			<div ng-controller="myCtrl1" ng-init="name='abc';mobile=555555">
+				<p>{{name}}</p>
+				<p>{{mobile}}</p>
+			</div>
+			<div ng-controller="myCtrl2">
+				<p>{{name}}</p>
+				<p>{{mobile}}</p>
+			</div>
+			<div ng-controller="myCtrl3">
+				<p>{{name}}</p>
+				<p>{{mobile}}</p>
+			</div>
+		</div>
+		<script>//voea mna.....odc nfsb....sdnef...sdme
+			var obj=angular.module("myModule",[]);
+			obj.controller("myCtrl1",function($scope){ <!--scope is  predefined, its obj of controller1.. obj is object of module-->
+				
+			});
+			
+			obj.controller("myCtrl2",function($scope){
+				$scope.name="Mr.India";
+				$scope.mobile=99999999;
+			});
+			
+			obj.controller("myCtrl3",function($scope){
+				$scope.name="Deepthi";
+				$scope.mobile=888888888;
+			});
+		</script>
+	</body>
+</html>

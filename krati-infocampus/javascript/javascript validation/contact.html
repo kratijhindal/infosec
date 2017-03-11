@@ -1,0 +1,55 @@
+<html>
+ <head>
+  <script src="contact.js">
+	</script>
+ </head>
+ 
+ <body>
+  <table align="center">
+	 <caption><h2>CONTACT US</h2></caption>
+	 <tr>
+	  <th>Full Name</th>
+		<td><input type="text" id="fname"><br>
+		<i id="ferror"></i>
+		</td>
+	 </tr>
+	 
+	 <tr>
+	  <th>Mobile no.</th>
+		<td><input type="text" id="mobile" maxlength="10"><br>
+		<i id="merror"></i>
+		</td>
+	 </tr>
+	 
+	 <tr>
+	  <th>City</th>
+		<td>
+		 <select id="city">
+		  <option value="">choose state</option>
+			<option value="1">up</option>
+			<option value="2">mp</option>
+			<option value="3">hp</option>
+		 </select><br>
+		 <i id="cerror"></i>
+		</td>
+	 </tr>
+	 
+	
+	 
+	 <tr>
+	  <th>Address</th>
+		<td><textarea cols="20" rows="5" id="address"></textarea><br>
+		<i id="aerror"></i>
+		</td>
+	 </tr>
+	 
+	 <tr>
+	  <th colspan="2">
+		 <button onclick="pagevalidate()">save now</button>
+		</th>
+	 </tr>
+	 
+	 
+	</table>
+ </body>
+</html>

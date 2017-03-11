@@ -1,0 +1,23 @@
+<html>
+ <head>
+  <script src="js/angular.js"></script>
+ </head>
+
+ <body>
+  <div ng-app="mymodule">
+   <div ng-controller="mycontroller">
+    NAME:<input type="text" ng-model="firstname"><br>
+    <{{firstname}}>
+   </div><!--controller end-->
+  </div><!--module end-->
+
+  <script>//voea d mna...odc nfs sdne sdme
+   var obj=angular.module("mymodule",[]);
+   obj.controller("mycontroller",function($scope){
+    $scope.firstname="krati";
+    
+   });
+
+  </script>
+ </body>
+</html>

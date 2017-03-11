@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>link hightlight</title>
+<style>
+a{
+background-color: pink;
+
+margin: 20px;
+text-align: center;
+padding: 20px;
+display: inline-block;
+}
+div{
+	background-color: yellow;
+	margin: 20px;
+	padding: 20px;
+	width:10%;
+}
+
+
+a.ho:link{
+   color: red;
+
+}
+a:link{
+	color:red;
+}
+a:visited{
+   color: green;
+}
+a:hover{
+	color: yellow;
+}
+a:active:{
+	color: pink;
+}
+div:hover{
+	background-color: blue;
+}
+
+
+
+</style>
+</head>
+<body>
+<a href="default.asp" target="_blank"> this is a link </a>
+<br>
+<a class=ho href="www.facebook.com" target=_blank"> link </a>
+<div> mouse over me</div>
+</body>
+</html>

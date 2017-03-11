@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<script src="js/angular.js"></script>
+	</head>
+	<body>
+		<div ng-app="myModule"> 
+			<div ng-controller="myFilter" ng-init="item=['mango','orange','apple','rice','banana']">
+				<p>
+					<ul>
+						<li ng-repeat="x in item">{{x | uppercase}}</li>
+					</ul>
+				</p>
+				<p>
+					<ul>
+						<li ng-repeat="a in item">{{a | lowercase}}</li>
+					</ul>
+				</p>
+				<p>
+					<ul>
+						<li ng-repeat="b in item | filter:'m'">{{b}}</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+		
+		<script>
+			var obj=angular.module("myModule",[]);
+			obj.controller("myFilter",function($scope){
+				
+			});
+		</script>
+	</body>
+</html>

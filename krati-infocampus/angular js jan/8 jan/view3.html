@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<script src="js/angular.js"></script>
+	</head>
+	<body>
+	 <div ng-app="">
+	  <table align="left">
+	   <caption>User Input</caption>
+		 <tr>
+		   <th>Name</th>
+			<td><input type="text" ng-model="fname"></td>
+		 </tr>
+		 <tr>
+		   <th>Mobile</th>
+			<td><input type="text" ng-model="mobile"></td>
+		 </tr>
+		 <tr>
+		   <th>City</th>
+			<td><input type="text" ng-model="city"></td>
+		 </tr>
+		 <tr>
+		   <th>Address</th>
+			<td><input type="text" ng-model="address"></td>
+		 </tr>
+		 <tr>
+		   <th>photo</th>
+			<td><input type="text" ng-model="photo"><br>
+			    <input type="text" ng-model="h" size="5">
+				 <input type="text" ng-model="w" size="5">
+			</td>
+		 </tr>
+	  </table>
+	  
+	  <table align="right" width="800" height="300" bgcolor="lightblue">
+	   <caption>previw</caption>
+		 <tr>
+		   <th>Name</th>
+			<td>{{fname}}</td>
+		 </tr>
+		 <tr>
+		   <th>Mobile</th>
+			<td>{{mobile}}</td>
+		 </tr>
+		 <tr>
+		   <th>City</th>
+			<td>{{city}}</td>
+		 </tr>
+		 <tr>
+		   <th>Address</th>
+			<td>{{address}}</td>
+		 </tr>
+		 <tr>
+		   <th>photo</th>
+			<td>
+			 <img src="{{photo}}" height="{{h}}" width="{{w}}">
+			</td>
+		 </tr>
+	  </table>
+	 </div>
+	</body>
+</html>	

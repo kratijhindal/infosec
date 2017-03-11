@@ -1,0 +1,26 @@
+<html>
+ <head>
+  <title> js6</title>
+	<script>
+	 function test(){
+	  alert("hello, from test function");
+	 }
+	 function test2(countryid){
+	  alert(countryid);
+	 }
+	</script>
+	
+ </head>
+ <body>
+  <input type="button" value="1click" onclick="test()"><br>
+	<input type="button" value="2click" ondblclick="test()"><br>
+	<input type="button" value="mouseover" onmouseover="test()"><br>
+	<input type="button" value="mouseout" onmouseout="test()"><br>
+	onchange:<select name="state" id="state" onchange="test2(this.value)">
+	      <option value="">choose state</option>
+				<option value="AP">ap</option>
+				<option value="HP">HP</option>
+				<option value="ODISHA">OODISHA</option>
+	</select>
+ </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+ <script src="js/angular.js">
+ </script>
+</head>
+
+<body>
+<div ng-app="" ng-init="x=['apple','banana','grapes']">
+	<p>{{x[0]}}</p>
+	<ul>
+     NG REPEAT:- <li ng-repeat="a in x">{{a}}</li>
+    </ul>
+
+    <hr>
+    <select>
+        <option value="">choose fruits</option>
+    	<option ng-repeat="a in x" value="{{a}}">{{a}}</option>
+    </select>
+    <hr>
+    <select>
+    	<option value="">choose fruits</option>
+    	<option ng-repeat="a in x" ng-bind="a"></option>
+    </select>
+    <hr>
+    <select  ng-model="f" ng-change="frts(f)">
+    	<option value="">choose fruits</option>
+    	<option value="">aaa</option>
+    	<option value="">ccc</option>
+    	<option value="">ddd</option>
+    </select>
+	</div>
+</body>
+</html>

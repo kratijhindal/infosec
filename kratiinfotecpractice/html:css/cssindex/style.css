@@ -1,0 +1,42 @@
+body{
+  background-color:green;
+}
+#maincontainer{
+     width:80%;
+     min-height:650px;
+     margin:auto;
+     background-color: white;
+
+}
+#header{
+	min-height:80px;
+}
+#menubar{
+	min-height:90px;
+	background-color: orange;
+	text-align: center;
+
+}
+
+#rightmenu{
+	float:left;
+	height:400px;
+}
+
+
+
+#leftmenu{
+	float:left;
+	width:20%;
+    min-height:400px;
+    background-color: yellow;
+
+}
+
+.clear{
+	clear: both;
+}
+#footerblock{
+	min-height:80px;
+	background-color: grey;
+}

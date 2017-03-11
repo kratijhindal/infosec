@@ -1,0 +1,3 @@
+[{"city":"bangalore","state":"karnatake","pop":"12000000"},{"city":"chennai","state":"tamilnadu","pop":"13000000"},
+{"city":"patna","state":"bihar","pop":"66666666"},{"city":"hyderabad","state":"AP","pop":"12000000"},
+{"city":"mumbai","state":"maharashtra","pop":"12000000"}]

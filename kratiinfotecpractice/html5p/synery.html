@@ -1,0 +1,188 @@
+
+<!DOCTYPE HTML>
+<html>
+ <body>
+  <canvas id="mycanvas" height="900" width="900"></canvas>
+ <script>
+  var c=document.getElementById("mycanvas");
+   var ctx=c.getContext("2d");
+   //for mountain
+   ctx.beginPath();
+   ctx.moveTo(100,400);
+   ctx.lineTo(200,200);
+   ctx.lineTo(300,400);
+   ctx.lineTo(400,200);
+   ctx.lineTo(500,400);
+   ctx.lineTo(600,200);
+   ctx.lineTo(700,400);
+   ctx.fillStyle="#D68E3C";
+   ctx.fill();
+   ctx.stroke();
+  ctx.closePath();
+
+   //for sun
+   ctx.beginPath();
+  //ctx.arc(200,250,20,0,1*Math.PI);
+  ctx.arc(300, 300, 50, 2*Math.PI, 1*Math.PI, true);
+  ctx.fillStyle="orange";
+            ctx.fill();
+  ctx.stroke();
+  ctx.closePath();
+
+  //for sun rays
+  ctx.beginPath();
+   ctx.moveTo(240,240);
+   ctx.lineTo(260,270);
+    
+   ctx.moveTo(260,230);
+   ctx.lineTo(270,260); 
+
+   ctx.moveTo(290,210);
+   ctx.lineTo(290,250); 
+   
+   ctx.moveTo(320,220);
+   ctx.lineTo(310,250); 
+
+   ctx.moveTo(350,230);
+   ctx.lineTo(330,260); 
+   
+   
+   ctx.stroke();
+  ctx.closePath();
+
+  //for face
+            ctx.beginPath();
+            ctx.arc(800,400,30,0,2*Math.PI);
+            ctx.fillStyle="yellow";
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.arc(790,390,5,0,2*Math.PI);
+            ctx.fillStyle="red";
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.arc(810,390,5,0,2*Math.PI);
+            ctx.fillStyle="red";
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.arc(800,410,10,0,1*Math.PI);
+            //ctx.fillStyle="black";
+            //ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+
+            //for smiley body
+   ctx.beginPath();
+   ctx.moveTo(800,430);
+   ctx.lineTo(800,520);
+
+
+   ctx.moveTo(750,490);
+   ctx.lineTo(800,450);
+   ctx.lineTo(850,490);
+  // ctx.moveTo(760,450);
+   //ctx.lineTo(800,400);
+   ctx.moveTo(750,550);
+   ctx.lineTo(800,520);
+   ctx.lineTo(850,550);
+   
+   ctx.stroke();
+  ctx.closePath();
+  //for tree
+  ctx.beginPath();
+   ctx.moveTo(50,50);
+   ctx.lineTo(50,520);
+   ctx.stroke();
+  ctx.closePath();
+ //for tree leaves
+ 
+  ctx.beginPath();
+   ctx.arc(70,100,60,1.5*Math.PI,Math.PI,true);
+   ctx.stroke();
+  ctx.closePath();
+
+  ctx.beginPath();
+   ctx.arc(30,100,60,0*Math.PI,1.5*Math.PI,true);
+   ctx.stroke();
+  ctx.closePath();
+//for bird
+   ctx.beginPath();
+   ctx.arc(550,200,20,1.5*Math.PI,Math.PI,true);
+   ctx.stroke();
+  ctx.closePath();
+
+  ctx.beginPath();
+   ctx.arc(510,200,20,0*Math.PI,1.5*Math.PI,true);
+   ctx.stroke();
+  ctx.closePath();
+
+  //for bird
+  ctx.beginPath();
+   ctx.arc(200,200,20,1.5*Math.PI,Math.PI,true);
+   ctx.stroke();
+  ctx.closePath();
+
+  ctx.beginPath();
+   ctx.arc(160,200,20,0*Math.PI,1.5*Math.PI,true);
+   ctx.stroke();
+  ctx.closePath();
+
+  //for bird
+  ctx.beginPath();
+   ctx.arc(500,300,20,1.5*Math.PI,Math.PI,true);
+   ctx.stroke();
+  ctx.closePath();
+
+  ctx.beginPath();
+   ctx.arc(460,300,20,0*Math.PI,1.5*Math.PI,true);
+   ctx.stroke();
+  ctx.closePath();
+
+  //for hut
+  ctx.beginPath();
+   ctx.moveTo(750,250);
+   ctx.lineTo(850,250);
+    ctx.lineTo(830,250);
+    ctx.lineTo(830,350);
+    ctx.lineTo(770,350);
+    ctx.lineTo(770,250);
+    ctx.lineTo(750,250);
+    ctx.lineTo(800,200);
+    ctx.lineTo(850,250);
+    
+    ctx.fillRect(790,280,20,50);
+
+   ctx.stroke();
+  ctx.closePath();
+//sun part remaining for coloring
+  ctx.beginPath();
+   ctx.moveTo(250,300);
+   ctx.lineTo(300,400);
+   ctx.lineTo(350,300);
+   //ctx.lineTo(250,300);
+   ctx.fillStyle="orange";
+   ctx.fill();
+   ctx.stroke();
+  ctx.closePath();
+
+
+
+
+
+
+
+
+  
+
+   
+ </script>
+ </body>
+</html>

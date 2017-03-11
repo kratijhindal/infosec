@@ -1,0 +1,27 @@
+<html>
+ <head>
+  <script src="js/angular.js"></script>
+ </head>
+
+<body>
+ <div ng-app="" ng-init="user=['mr abc','99999','banglore','25']">
+  <ul>
+   <li>{{user[0]}}</li>
+   <li>{{user[1]}}</li>
+   <li>{{user[2]}}</li>
+   <li>{{user[3]}}</li>
+
+ <hr>
+ <ul>
+ <li ng-repeat="x in user">{{x}}</li>
+</ul> 
+ 
+<select>
+ <option>choose option</option>
+ <option ng-repeat="x in user">{{x}}</option>
+</select>
+
+  </ul>
+</div>
+</body>
+</html>

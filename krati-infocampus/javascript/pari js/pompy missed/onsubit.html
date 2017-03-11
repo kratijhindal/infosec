@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<script>
+		 function test(value){
+			alert(value);
+		 }
+			function test2()
+		{
+			alert("Hello");
+			//return false;
+			return true;
+		}
+		</script>
+		
+	</head>
+	<body>
+		on focus:<input type="text" onfocus="test(this.value)"></input><hr>
+		on blur:<input type="text" onblur="test(this.value)"></input>
+		<hr>
+		<form action="abc.php" onsubmit="return test2()">
+			Name:<input type="text"></input><br>
+			Mobile:<input type="text"></input><br>
+			<button type="submit">Save</button>
+		</form>
+	</body>
+</html>

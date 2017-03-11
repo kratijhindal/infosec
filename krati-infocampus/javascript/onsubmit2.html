@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script src=external.js>
+			
+		
+		</script>
+	</head>
+	<body>	
+	<form method="POST" action="saveuser.php" onsubmit="return validateform()">
+			Full Name : <input type="text" id="fname"/><br><br>
+			Mobile No : <input type="text" id="mobile" maxlength="10"/><br><br>
+			Email     : <input type="text" id="email"/><br><br>
+			State	  :	<select id="state">
+						<option value="">Choose State</option>
+						<option value="1">Karnataka</option>
+						<option value="2">Kerala</option>
+						</select>
+			<button type="submit">Save</button>
+			<button type="reset">Reset</button>
+	</form>	
+	</body>
+</html>
+

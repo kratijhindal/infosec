@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html>
+	<canvas id="myCanvas" width='600' height='500'></canvas>
+	<script>
+		var c=document.getElementById('myCanvas');
+		var ctx=c.getContext('2d');
+		ctx.moveTo(20,100);
+		ctx.bezierCurveTo(20,300,300,300,300,100);
+		ctx.stroke();
+	</script>
+</html>

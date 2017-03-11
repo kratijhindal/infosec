@@ -1,0 +1,56 @@
+<!--Exapmle of external MVC-->
+<html>
+	<head>
+		<script src="js/angular.js"></script>
+		<script src="js/mymodule.js"></script>
+		<script src="js/mycontrol.js"></script>
+	</head>
+	<body>
+		<div ng-app="user">
+			<div ng-controller="userAccount" ng-init="allcity=['Bangalore','Delhi','Chennai','UP'];
+					alluser=[{'name':'Nalini','amount':5000,'city':'Delhi'},
+								{'name':'Noushad','amount':4000,'city':'Pune'},
+								{'name':'gopi','amount':500,'city':'Kolkata'},
+								{'name':'Hari','amount':8000,'city':'Delhi'}]">
+				<p>{{message}}</p>
+				<h1>Angular Js Mouse Events</h1>
+				<button ng-click="one()">Mouse 1 Click</button>
+				<button ng-dblclick="two()">Mouse 2 Click</button>
+				<button ng-mousemove="three()">Mouse on Button</button>
+				<button ng-mousedown="four()">Mouse Down/Click</button>
+				<button ng-mouseup="five()">Mouse up </button>
+				<hr color="red">
+				<p>{{message}}</p>
+				
+				<h1>Angular Js Keyboard Events</h1>
+				Name:<input type="text" ng-model="fname" ng-keypress="six(fname)"><br><br>
+				Name:<input type="text" ng-model="fname1" ng-keydown="seven(fname1)"><br><br>
+				Name:<input type="text" ng-model="fname2" ng-keydown="eight(fname2)">
+				<hr color="red">
+				City:<select ng-model="mycity" ng-change="showcity(mycity)">
+							<option value="">Choose city</option>
+							<option ng-repeat="c in allcity" value="{{c}}">{{c}}</option>
+						</select>
+				<hr color="red">
+				Name:<input type="text" ng-model="fname3" ng-focus="ten(fname3)">
+				<hr>
+				Name:<input type="text" ng-model="fname4" ng-blur="eleven(fname4)">
+				<p>{{message2}}</p>
+				
+				<h1>Angular JS Filtter Example</h1>
+					<table align="center" border="1">
+						<tr>
+							<th>Full Name</th>
+							<th>Total Amount</th>
+							<th>City</th>
+						</tr>
+						<tr ng-repeat="row in alluser|orderBy:'name'|filter:'Delhi'">
+							<td>{{row.name|uppercase}}</td>
+							<td>{{row.amount}}</td>
+							<td>{{row.city|uppercase}}</td>
+						</tr>
+					</table>
+			</div>
+		</div>
+	</body>
+</html>

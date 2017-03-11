@@ -1,0 +1,62 @@
+<html>
+ <head>
+  <script src="js/angular.js"></script>
+ </head>
+
+ <body>
+  <div ng-app="module1">
+  	<div ng-controller="controller1">
+  	 <button ng-click="test1()">Test1</button>
+  	 <button ng-click="test2()">Test2</button>
+  	 <button ng-click="test3()">Test3</button>
+  	 <button ng-click="test4()" ng-dblclick="test5()">Test4</button>
+  	 <select ng-model="city" ng-change="test6(city)">
+  	 	<option value="">choose city</option>
+  	 	<option value="">banglore</option>
+  	 	<option value="">mumbai</option>
+  	 </select>
+  	<hr>
+  	<select ng-model="pic" ng-change="test7(pic)">
+  		<option value="">choose pic</option>
+  		<option value="1.jpg">flower</option>
+  		<option value="2.jpg">water</option>
+  		<option value="3.jpg">senery</option>
+  	</select>
+  	<hr>
+   <h1>{{message}}</h1>
+   <h2>{{message1}}</h2>
+   <h3>{{message2}}</h3>
+  <img src="{{photo}}" height="200" width="300">
+   <hr color="red">
+   </div>
+  </div><!--module ends-->
+ </body>
+
+ <script>
+  
+  var obj=angular.module("module1",[]);
+  obj.controller("controller1",function($scope){
+   $scope.test1=function(){
+   	$scope.message="hello test1";
+   }
+   $scope.test2=function(){
+   	$scope.message1="hello test2";
+   }
+   $scope.test3=function(){
+   $scope.message2="hello test3";
+   }
+   $scope.test4=function(){
+   	$scope.message="hello single click";
+   }
+   $scope.test5=function(){
+   	$scope.message="hello double click";
+   }
+   $scope.test6=function(optval){
+   	$scope.message=optval;
+   }
+   $scope.test7=function(pic){
+   	$scope.photo=pic;
+   }
+  });
+ </script>
+</html>

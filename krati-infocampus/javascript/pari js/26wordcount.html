@@ -1,0 +1,24 @@
+<html>
+<head>
+	<script>
+		function counttotal()
+		{
+		//alert ("hello");
+		var text=document.getElementById("words").value; //very imp line. html to html it will include to doc.
+		//alert(text.length);
+		document.getElementById("msg").innerHTML=text.length; //innerhtml  helps in non form control like hr br span div etc.
+		}
+		
+	</script>
+</head>
+<body>
+<center>
+	<h1> word count <h1>
+	<label id="msg">3</label><hr>
+	<textarea id="words" onkeyup="counttotal()"></textarea>
+	<hr>
+	<button onclick="counttotal()"> count </button>
+	</hr>
+	</center>
+</body>
+</html>

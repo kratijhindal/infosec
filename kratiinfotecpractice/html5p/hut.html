@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+ <html>
+  <body>
+  
+   <canvas id="mycanvas" width="700" height="800">
+	</canvas>
+	
+	<script>//browser interpreter only understands sccii text file.
+	 var c=document.getElementById('mycanvas');
+	 var ctx=c.getContext('2d');//getcontext is a method which returns an object which have method and properties for drawing the canvas.(obj can call property  and function)
+	 ctx.moveTo(100,100);<!--1 line-->
+	 ctx.lineTo(500,100);
+	 ctx.moveTo(450,100);<!--1 line-->
+	 ctx.lineTo(450,400);
+	 
+	
+	 ctx.lineTo(350,400);
+	 ctx.lineTo(350,350);
+	 ctx.lineTo(300,350);
+	 
+	 ctx.lineTo(300,400);
+	 ctx.lineTo(150,400);
+	 ctx.lineTo(150,100);
+	 ctx.lineTo(100,100);
+	
+	 ctx.lineTo(300,25);
+	 ctx.lineTo(500,100);
+	 
+	 ctx.fillStyle = 'red';
+	 ctx.fillRect(175,150,50,50);
+	 
+	 ctx.moveTo(300,25);<!--1 line-->
+	 ctx.lineTo(300,5);
+	  var grd=ctx.createLinearGradient(300,5,100,10);
+	 grd.addColorStop(0,'red');
+	 grd.addColorStop(0.5,'green');
+	  grd.addColorStop(1,'blue');
+		
+		ctx.fillRect(300,5,100,10);
+	 ctx.fillStyle =grd;
+	 ctx.stroke();
+	</script>
+	
+  </body>
+ </html><!--
+ ctx.createLinearGradient-addcolorstop has two argument .the range and the color.
+ -->

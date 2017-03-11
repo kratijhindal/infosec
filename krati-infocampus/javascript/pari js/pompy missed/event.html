@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<script>
+			function test()
+			{
+				alert("Ok");
+				//status=confirm("Are you sure");
+							//alert(status);
+				//name=prompt("Enter your Email id");
+						//alert(Email);
+			}
+			function showcity(state)
+				{
+					alert(state);
+				}
+		</script>
+	</head>
+	<body>
+	<h1>Mouse event</h1>
+	 <button onclick="test()">1 click</button>
+	 <button ondblclick="test()">2 click</button>
+	 <button onmousemove="test()">Move mouse</button><hr>
+	 <div style="width:100px; height:100px; background:green;" onmouseout="test()"></div><hr>
+	 onchange:<select onchange="test()">
+							<option value="">choose option</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+		<hr>
+		<select onchange="showcity(this.value)">
+			<option value="">choose option</option>
+			<option value="1">Karnataka</option>
+			<option value="2">MP</option>
+			<option value="3">UP</option>
+		</select>
+		<h3>Keyboard Event</h3>
+		onkey press:<input type="text" onkeypress="showcity(this.value)"></input><hr>
+		onkey down:<input type="text" onkeydown="showcity(this.value)"></input>
+		onkey up:<input type="text" onkeyup="showcity(this.value)"></input>
+		on focus:<input type="text" onfocus="showcity(this.value)"></input>
+		<body onload="showcity(This is form body load event)"></body>
+	</body>
+</html>

@@ -1,0 +1,4 @@
+local array
+global array
+alldata.push(itemname) = Arrange item at last
+alldata.unshift(itemname)= arranges the item in first

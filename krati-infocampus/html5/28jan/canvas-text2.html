@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+ <html>
+  <body><!--text in canvas-->
+  
+   <canvas id="mycanvas" width="700" height="800">
+	</canvas>
+	
+	<script>//browser interpreter only understands sccii text file.
+	 var c=document.getElementById('mycanvas');
+	 var ctx = c.getContext('2d');//getcontext is a method which returns an object which have method and properties for drawing the canvas.(obj can call property  and function)
+	 
+	 ctx.font='10px Ariel';
+    ctx.fillText("c language",100,100);
+	 ctx.font='30px Times New Roman';
+	 ctx.fillText("c++ language",100,200);
+	 ctx.font='50px comic Sans MS';
+	 ctx.fillText("java language",100,300);
+	 
+	 ctx.stroke();
+	</script>
+	
+  </body>
+ </html><!--
+ 
+ ctx.font='30px Ariel'
+ ctx.filtext("Hello",100,100);-->

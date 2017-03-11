@@ -1,0 +1,15 @@
+body{
+	background-color:yellow;
+	width:100%;
+}
+
+#one{
+	height:50px;
+	background-color:black;
+	margin:none;
+	width:100%;
+}
+#mobile{
+	color:white;
+	padding:20 20px;
+}

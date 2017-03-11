@@ -1,0 +1,22 @@
+<table align="center">
+	<tr bgcolor="orange">
+		<th>City Name</th>
+		<th>State Name</th>
+		<th>Population</th>
+	</tr>
+	<tr ng-repeat="row in citylist">
+		<td>{{row.city}}</td>
+		<td>{{row.state}}</td>
+		<td>{{row.pop}}</td>
+	</tr>
+	<tr ng-repeat="staterow in allstate">
+		<td></td>
+		<td>{{staterow.state}}</td>
+		<td></td>
+	</tr>
+	<tr ng-repeat="cityrow in citypop">
+		<td>{{cityrow.city}}</td>
+		<td></td>
+		<td>{{cityrow.pop}}</td>
+	</tr>
+</table>

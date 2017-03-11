@@ -1,0 +1,18 @@
+bezier curve:-  in this we havwe 2 control points.
+--------------------------
+Drag and drop
+	write a script to draging a card to one place to another	
+-------------------
+chorme4.0+higher version
+morzilla3+
+sapari4.0
+opera11.0+
+----------------
+SSE server sent event sse is substitute for ajax.
+AJAX- ajax is a web technology in which we referesh perticular web content without refreshing a web page.
+for Ajax call every time we need to requset to the server 
+for sse its not required simply we create the server refernce onthe browser andf it automatically updtae if ther is new update on the server.
+methods of SSE 
+	=>onopen:when connection to server open
+	=>onerror:when error occurs
+	=>onmessage:when message recives

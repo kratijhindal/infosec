@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>javascript.replce</title>
+</head>
+<body>
+hello
+<p id="p1">microsoft and w3school</p>
+
+<button type ="button" onclick="myfunction()">try it</button>
+<p id="demo"></p>
+<script>
+function myfunction()
+{
+
+    var str = document.getElementById("p1").innerHTML ;
+    //alert(str.replace('microsoft', 'w3school'));
+    var txt = str.replace("microsoft" , "w3school") ;
+    
+    document.getElementById("p1").innerHTML= txt ;
+}
+
+	
+
+
+
+
+
+
+</script>
+</body>
+</html>

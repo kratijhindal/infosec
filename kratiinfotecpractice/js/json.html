@@ -1,0 +1,13 @@
+<html>
+<head>
+</head>
+
+<body>
+<p id="demo"></p>
+ <script>
+  var text= '{"properties":[' + ' {"firstname":"krati","lastname":"jhindal"} , ' + ' {"firstname":"mukul" ,"lastname":"agrawal"},'+' {"firstname":"anshi","lastname":"agrawal"}]}';
+  obj = JSON.parse(text);
+  document.getElementById("demo").innerHTML= obj.properties[1].firstname + " " + obj.properties[1].lastname;
+ </script>
+</body>
+</html>

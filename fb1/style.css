@@ -1,0 +1,106 @@
+body{
+	background-color:white;
+    margin:0px;
+	
+}
+#main_container{
+    width:100%;
+    min-height:650px;
+    margin:auto;
+    background:white;
+    border-radius:2px;
+}
+
+#menublock{
+    min-height:100px;
+    background:blue;
+    
+    
+    
+}
+#leftblock{
+    width:50%;
+    float:left;
+    
+    background-color:white;
+    min-height:450px;
+    
+    
+}
+#rightblock{
+    width:50%;
+    float:left;
+    background:white;
+    
+    min-height:450px;
+    
+}
+.clear{
+    clear:both;
+    }
+
+    
+}
+#logo h1{
+    color:white;
+    font-size:30px;
+    font-family:comic sans Ms;
+    float:left;
+    padding:30px;
+
+}
+.loginform{
+    
+     float:right;
+     padding: -80px;
+     
+    color:white;
+    
+    
+     
+}
+p{
+    font-size:23px;
+    margin-left:100px;
+    float:left;
+}
+img{
+    width:200px;
+    height:270px;
+    margin-left:200px;
+    
+}
+#form,h2,h3{
+    margin-left:100px;
+   
+}
+#form input{
+   border:1px solid;
+   border-radius:15px;
+   color:black;
+   padding:10px;
+   float:left;
+   
+}
+
+.clear{
+    clear:both;
+    }
+
+#footerblock{
+    min-height:100px;
+    background-color:black;
+    opacity:0.5;
+    
+}
+
+
+
+
+
+
+
+
+
+
+

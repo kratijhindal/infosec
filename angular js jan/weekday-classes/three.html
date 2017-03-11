@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<script src="js/angular.js"></script>
+	</head>
+	<body>
+		<div ng-app="">
+			<table align="left" bgcolor="orange">
+				<tr>
+					<th>Name</th>
+					<td><input type="text" ng-model="fname"></td>
+				</tr>
+				<tr>
+					<th>Mobile</th>
+					<td><input type="text" ng-model="mobile"></td>
+				</tr>
+				<tr>
+					<th>Email</th>
+					<td><input type="text" ng-model="email"></td>
+				</tr>
+				<tr>
+					<th>Photo</th>
+					<td><input type="text" ng-model="photo">
+					<input type="text" size="5" ng-model="pheight">
+					<input type="text" size="5" ng-model="pwidth"></td>
+				</tr>
+			</table>
+			
+			<!-- second table-->
+			<table align="center" bgcolor="orange">
+				<tr>
+					<th>Name</th>
+					<td>{{fname}}</td>
+				</tr>
+				<tr>
+					<th>Mobile</th>
+					<td>{{mobile}}</td>
+				</tr>
+				<tr>
+					<th>Email</th>
+					<td>{{email}}</td>
+				</tr>
+				<tr>
+					<th>Photo</th>
+					<td><img src="{{photo}}" height="{{pheight}}" width="{{pwidth}}"></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

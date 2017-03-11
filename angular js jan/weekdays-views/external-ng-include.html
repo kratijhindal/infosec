@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<script src="../lib/angular.js"></script>
+	</head>
+	<body>
+		<div ng-app="myModule">
+			<div ng-controller="myControl">
+				<button ng-click="showcity()">get city</button>
+				<button ng-click="showstate()">get state</button>
+				<button ng-click="citypop()">city pop</button>
+				<hr>
+					<div ng-include="'usserlist.html'"></div>
+				<hr>
+			</div>
+		</div>
+		<script>
+			var obj=angular.module("myModule",[]);
+			obj.controller("myControl",function($scope,$http){
+				$scope.showcity=function(){
+					$scope.allstate="";
+					$scope.citypop="";
+					$http.get("userdata.txt").then(function(response){
+					$scope.citylist=response.data;
+					});
+				}
+				
+				$scope.showstate=function(){
+					$scope.citylist="";
+					$scope.citypop="";
+					$http.get("userdata.txt").then(function(response){
+					$scope.allstate=response.data;
+					});
+				}
+				
+					
+				$scope.citypop=function(){
+					$scope.citylist="";
+					$scope.allstate="";
+					$http.get("userdata.txt").then(function(response){
+					$scope.citypop=response.data;
+					});
+				}
+			});
+		</script>
+	</body>
+</html>

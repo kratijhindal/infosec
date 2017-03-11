@@ -1,0 +1,116 @@
+<html>
+ <head>
+  <script src="js/angular.js"></script>
+  <script src="mymodule1.js"></script>
+  <script src="mycontrol1.js"></script>
+  
+ </head>
+
+ <body>
+  <div ng-app="mymodule">
+  	<div ng-controller="mycontroller" ng-init="
+  	allcity=['delhi','banglore','agra','knpur'];
+  	alluser=[{'name':'krati','amount':'20000','city':'banglore'},
+  	           {'name':'abcd','amount':'700','city':'agra'},
+  	           {'name':'xyz','amount':'4000','city':'firozabad'}]">
+  	<p>{{message1}}</p>
+  	<h3>Angular js mouse events</h3>
+  		<button ng-click="click1()">one click</button>
+  		<button ng-click="click2()">double click</button>
+  		<button ng-click="click3()">mouse on button</button>
+  		<button ng-click="click4()">mouse dowm/click</button>
+  		<button ng-click="click5()">mouse up</button>
+  		<p>{{message}}</p><!--message button-->
+  		<h2>Angular Js Keybord events</h2>
+  		Name:<input type="text" ng-model="fname" ng-keyup="six(fname)"><br>
+  		Name:<input type="text" ng-model="fname1" ng-keydown="seven(fname1)"><br>
+  		Name:<input type="text" ng-model="fname2" ng-keypress="eight(fname2)"><br>
+  		Name:<input type="text" ng-model="fname3" ng-focus="nine(fname3)"><br>
+  		Name:<input type="text" ng-model="fname4" ng-blur="ten(fname4)"></br>
+  		<p>{{message3}}</p>
+  		<hr>
+  		<select ng-model="mycity" ng-change="showcity(mycity)">
+  		 <option>choose city</option>
+  		 <option ng-repeat="x in allcity" value="x">{{x}}</option>
+  		</select>
+  		<p>{{message4}}</p>
+  		<hr>
+       <table align="center" border="1">
+        <tr>
+        	<th>full name</th>
+        	<th>total amount</th>
+        	<th>city</th>
+        </tr>
+        <tr ng-repeat="row in alluser">
+        	<td>{{row.name}}</td>
+        	<td>{{row.amount}}</td>
+        	<td>{{row.city}}</td>
+        </tr>
+       </table>
+
+
+
+
+  	</div><!--controller ends-->
+  </div><!--module ends-->
+
+  <!--<script>//voea d mna odcnfs sdne sdme
+   var obj=angular.module("mymodule",[]);
+   obj.controller("mycontroller",function($scope){
+   	 $scope.message1="hello india";
+
+   	 $scope.click1=function(){
+      $scope.message="one click";
+   	 }
+
+   	 $scope.click2=function(){
+   	 	 $scope.message="double click";
+   	 }
+   	 $scope.click3=function(){
+   	 	 $scope.message="three click";
+   	 }
+   	 $scope.click4=function(){
+   	 	 $scope.message="four click";
+   	 }
+   	 $scope.click5=function(){
+   	 	 $scope.message="five click";
+
+   	 }
+     $scope.message3="hello";
+
+
+   	 $scope.six=function(tvar){
+      $scope.message3="you hav entered-:" +tvar;
+   	 }
+   	 $scope.seven=function(tvar){
+      $scope.message3="you hav entered-:" +tvar;
+   	 }
+   	 $scope.eight=function(tvar){
+      $scope.message3="you hav entered-:" +tvar;
+   	 }
+   	 $scope.nine=function(tvar){
+   	 	$scope.message3="u have entered-:" +tvar;
+   	 }
+     //$scope.showcity=function(city){
+     // $scope.message4="u have entered-:" +city;
+     //}
+     $scope.showcity=function(c){
+			$scope.message4="You Have Selected:"+c;
+		}
+
+
+
+
+   });//fuction endsss
+  </script>-->
+ </body>
+</html>
+
+
+
+
+
+
+
+
+

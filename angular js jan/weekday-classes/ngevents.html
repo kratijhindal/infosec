@@ -1,0 +1,98 @@
+<html>
+ <head>
+  <script src="js/angular.js"></script>
+ </head>
+
+<body>
+	  <div ng-app="myEvent">
+	   <div ng-controller="eventControl">
+		   on blur :<input type="text" ng-model="fname" ng-blur="myblur(fname)">
+          Ng chane : <select ng-model="city" ng-change="showcity(city)">
+			              <option value="">Choose city</option>
+							   <option value="Banglore">Banglore</option>
+								 <option value="dlh">delhi</option>
+								  <option value="agra">Agra</option>
+								   <option value="mum">mumbai</option>
+			            </select>
+			<hr>
+			<p ng-copy="copydata()">hello india ..how do u do</p>
+			<p> Ng Focus : 
+			<input type="text" ng-model="focusdata" ng-focus="showfocus()"></p>
+			<hr>
+			<p> Key Down: 
+			<input type="text" ng-model="focusdata" ng-keydown="showkeydown()"></p>
+			
+			<hr>
+			<p> Key Press: 
+			<input type="text" ng-model="keypress" ng-keydown="showkeypress()"></p>
+			
+			<hr>
+			<p> Key Up: 
+			<input type="text" ng-model="keyup" ng-keyup="showkeyup(keyup)"></p>
+			
+			<hr>
+			<p> mousedown: 
+			<button ng-mousedown="showmousedown()">mousedown</button></p>
+			
+			<p> mouseenter: 
+			<button ng-mouseenter="menter()">menter</button></p>
+			
+			<p> mouseleave: 
+			<button ng-mouseleave="mleave()">mouseLeave</button></p>
+			<p>{{message}}</p>
+		</div>
+	  </div>
+	  
+	  <script>
+	   var obj=angular.module("myEvent",[]);
+		obj.controller("eventControl",function($scope){
+		  $scope.myblur=function(myname){
+		  $scope.message=myname;
+		  }
+		  
+		  $scope.showcity=function(cityname){
+		  $scope.message=cityname;
+		  
+		   //alert(myname);
+			
+		  }
+		  $scope.copydata=function(){
+		   alert("hello copy");
+		  }
+        $scope.showfocus=function(fdata){
+		  alert("The cursor is here");
+		  
+		   //alert(myname);
+			
+		  }		  
+		  $scope.showkeydown=function(){
+		  alert("key down");
+			
+		  }	
+
+        $scope.showkeypress=function(){
+		  alert("key press");
+			
+		  }	
+      $scope.showkeyup=function(data){
+		 $scope.message=data;
+			
+		  }	
+
+      $scope.showmousedown=function(){
+		  alert("mouse is down");
+			
+		  }	
+      $scope.menter=function(){
+		  alert("mouse is enter");
+			
+		  }	
+
+     $scope.mleave=function(){
+		  alert("mouse is leaving");
+			
+		  }			  
+		});
+	  </script>
+</body>
+</html>

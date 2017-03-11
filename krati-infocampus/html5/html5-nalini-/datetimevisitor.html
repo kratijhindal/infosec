@@ -1,0 +1,62 @@
+<!--Write ascript to store the last date time visited by the-->
+<!DOCTYPE HTML>
+<html>
+<body>
+the current time is<span id="curr"></span>
+	<script>
+	var dt= new Date();
+	
+	console.log(dt.getMonth()+1);
+	var currMonth = dt.getMonth()+1;
+	console.log('\n');
+	console.log(dt.getYear());
+	console.log('\n');
+	console.log(dt.getDate());
+	var mon,yr;
+	switch(currMonth)
+	{
+		case 1: mon='jan';
+		break;
+		case 2: mon='Feb';
+		break;
+		case 3: mon='Mar';
+		break;
+		case 4: mon='Apr';
+		break;
+		case 5: mon='May';
+		break;
+		case 6: mon='jun';
+		break;
+		case 7: mon='jul';
+		break;
+		case 8: mon='Aug';
+		break;
+		case 9: mon='Sep';
+		break;
+		case 10: mon='Oct';
+		break;
+		case 11: mon='Nov';
+		break;
+		case 12: mon='Dec';
+		break;
+		default: console.log('other month');
+	}
+	document.getElementById('curr').innerHTML = localStorage.currentDate+'\n'+localStorage.currentTime;
+	console.log('The type is'+localStorage.currentDate);
+	if(typeof(localStorage.currentDate) == 'undefined')
+	{
+		console.log('if');
+		//console.log(dt.getDate()+','+mon'('+dt.getYear()+')');
+		localStorage.currentDate=dt.getDate()+','+mon+'('+dt.getFullYear()+')';
+		localStorage.currentTime=dt.getHours()+':'+dt.getMinutes()+':'+dt.getSeconds();
+	}
+	else
+	{
+		console.log('else');
+		localStorage.currentDate=dt.getDate()+','+mon+'('+dt.getFullYear()+')';
+		localStorage.currentTime=dt.getHours()+':'+dt.getMinutes()+':'+dt.getSeconds();
+	}
+	
+	</script>
+</body>
+</html>

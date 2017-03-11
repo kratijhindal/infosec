@@ -1,0 +1,55 @@
+<html>
+ <head>
+ 	<script src=js/angular.js></script>
+ </head>
+
+ <body>
+ 	<div ng-app="" ng-init="user=[{'name':'krati','mobile':'33333','city':'banglore'},
+								 	{'name':'shanu','mobile':'987654','city':'delhi'},
+								 	{'name':'ranu','mobile':'223233','city':'agra'},
+								 	{'name':'qqqq','mobile':'1112233','city':'madras'}]">
+ 		
+ 		<table align="center"  bgcolor="lightblue">
+ 			<tr>
+ 				<th>Name:</th>
+ 				<th>Mobile:</th>
+ 				<th>City:</th>
+ 			</tr>
+ 			<tr ng-repeat="row in user | orderBy:'-name'">
+ 				<td>{{row.name}}</td>
+ 				<td>{{row.mobile}}</td>
+ 				<td>{{row.city | uppercase}}</td>
+ 			</tr>
+ 		</table>
+ 		<hr>
+ 		<table align="center"  bgcolor="lightblue">
+ 		<tr>
+ 				<th>Name:</th>
+ 				<th>Mobile:</th>
+ 				<th>City:</th>
+ 		</tr>
+
+ 			<tr>
+ 				<td>
+ 					<select>
+ 					    <option>choose name</option>
+ 						<option ng-repeat="row in user | orderBy:'-name'">{{row.name | uppercase}}</option>
+ 					</select>
+ 				</td>
+ 				<td>
+ 					<select>
+ 					    <option>choose mobile</option>
+ 						<option ng-repeat="row in user">{{row.mobile}}</option>
+ 					</select>
+ 				</td>
+ 				<td>
+ 					<select>
+ 					    <option>choose city</option>
+ 						<option ng-repeat="row in user">{{row.city}}</option>
+ 					</select>
+ 				</td>
+ 			</tr>
+ 		</table>
+ 	</div>
+ </body>
+</html>

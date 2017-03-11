@@ -1,0 +1,31 @@
+<!--arc in canvas--this is a method in canvas though which we can draw arc of different radients ,radius,clock orientation
+ctx.arc(x1,y1,r,start-angle,end angle,clockwise_boolean)
+-->
+<!DOCTYPE HTML>
+ <html>
+  <body>
+  
+   <canvas id="mycanvas" width="700" height="800">
+	</canvas>
+	
+	<script>
+	
+	 var c=document.getElementById('mycanvas');
+	 var ctx=c.getContext('2d');
+	 ctx.moveTo(200,200);
+	 ctx.fillStyle='red';
+	 ctx.arc(200,200,100,0,2*Math.PI,true);
+	 // ctx.lineTo(100,500);
+	 
+	  //ctx.strokeRect(100,100,200,200);
+	 // ctx.moveTo(100,100);<!--1 line-->
+	 
+	 
+
+	
+	 ctx.stroke();
+	</script>
+	
+  </body>
+ </html>
+ 

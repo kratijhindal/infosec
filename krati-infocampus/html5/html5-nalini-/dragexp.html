@@ -1,0 +1,26 @@
+<!--write a script to draging a card to one place to another-->
+<!DOCTYPE HTML>
+<html>
+	<body>
+		<div id ="id2" ondrop="onDrop(event)" ondragover="dragOver(event)" style="width:400px;height:300px;border:2px solid red;"></div>
+		<br><br>
+		<img id="id1" draggable="true" ondragstart="dragStart(event)" src="1.jpg" width=100 height=100>
+		<script>
+			function dragStart(event)
+			{
+				console.log('Iam starting');
+				event.dataTransfer.setData('text',event.target.id);
+			}
+			function onDrop(event)
+			{
+				var data=event.dataTransfer.getData('text');
+				event.target.appendChild(document.getElementById(data));
+			}
+			function dragOver(event)
+			{
+				event.preventDefault();
+			}
+		</script>
+
+	</body>
+</html>

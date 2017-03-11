@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+ <body>
+ <canvas id= "mycanvas" width="700" height="800"></canvas>
+ </body>
+
+ <script>
+  var c=document.getElementById("mycanvas");
+  var ctx=c.getContext('2d');
+
+  ctx.moveTo(100,100);
+  ctx.lineTo(400,100);
+
+  ctx.textBaseline = 'bottom';
+  ctx.font= '60px areil';
+  ctx.fillText('1','100','100');
+
+  ctx.textBaseline = 'top';
+  ctx.font= '60px areil';
+  ctx.fillText('2','400','100');
+
+  ctx.textBaseline = 'middle';
+  ctx.font= '60px areil';
+  ctx.fillText('mid','200','100');
+
+  ctx.stroke();
+ </script>
+</html>

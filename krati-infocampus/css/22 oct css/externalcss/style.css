@@ -1,0 +1,84 @@
+
+	 body{background-color:green;opacity:0.5;
+	 }
+	 #mainblock{
+	    width:80%;
+			min-height:600px;
+			background:white;
+			margin:auto;
+		}
+		#tophead{
+		 height:80px;
+		 background:orange;
+		 text-align:center;
+		 }
+	 #leftnav{
+	     float:left;
+			width:20%;
+			background:skyblue;
+			min-height:520px;
+			
+	 }
+	 #datablock{
+	    float:left;
+			width:60%;
+			background:white;
+	 
+	 
+	 }
+	 .topmenu{
+	   list-style-type:none;
+		 padding-top:25px;
+	 
+	 }
+	 .topmenu li{
+	     display:inline;
+			 width:150px;
+			 padding:10px;
+	 }
+	 .topmenu li a{
+	      color:green;
+				font-size:18px;
+				font-weight:bold;
+				text-decoration:none;
+	 
+	 }
+	 .topmenu li a:hover{
+	      color:red;
+	 
+	 }
+	 .leftmenu{
+	   list-style-type:none;
+		 
+	 
+	 }
+	 
+	 .leftmenu li a{
+	      color:green;
+				font-size:18px;
+				font-weight:bold;
+				text-decoration:none;
+	 
+	 }
+	 .leftmenu li a:hover{
+	      color:red;
+	 
+	 }
+	 .leftmenu li{
+	  border-bottom:1px solid red;
+		margin-left:-30px;
+		line-height:40px;
+	 }
+	 #signup{
+	   width:40%;padding:10px;border:5px solid red;margin:auto;
+	 }
+	 .inputbox{
+	   height:30px; padding:5px;width:200px;border-radius:5px;border:3px solid green;
+		 
+	 }
+	 caption{color:green;font-size:20px;
+	 }
+	 button{
+	   color:green;font-weight:bold;font-size:23px;padding:5px;background:blue;border-radius:10px;
+	 }
+	 
